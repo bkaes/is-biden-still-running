@@ -10,7 +10,7 @@ const CenteredText: React.FC = () => {
     setRandomText(texts[randomIndex]);
   }, []);
 
-  const containerStyle = {
+  const containerStyle: React.CSSProperties = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -18,9 +18,9 @@ const CenteredText: React.FC = () => {
     textAlign: 'center',
   };
 
-  const textStyle = {
+  const textStyle: React.CSSProperties = {
     fontSize: 'min(max(60px, 5vw), 80px)',
-    fontWeight: '300',
+    fontWeight: 300,
     display: 'flex',
     alignItems: 'center',
   };
