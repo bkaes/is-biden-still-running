@@ -42,7 +42,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <a> Fuck Donald Trump</a>
+      <a> Fuck Donald Trump </a>
     </main>
   );
 }
