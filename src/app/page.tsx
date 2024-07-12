@@ -1,95 +1,48 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-
+import NumberBox from "./NumberBox";
+import CenteredText from "./CenteredText";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+      <div style={{ height: "20px" }}></div>
+      <h1 style={{ fontSize: "min(max(48px, 5vw), 80px)", fontWeight: "100", textAlign: "center" }}> Is Biden still running?</h1>
+
+        <CenteredText />
+
+
+      <div className={styles.card} style={{
+        display: 'flex', flexDirection: 'column', justifyContent: 'center',
+        alignItems: 'center', padding: '10px'
+      }}>
+        <h3 style={{ fontWeight: "200" }}>Calls for Biden to Step down</h3>
+        <div style={{ height: "20px" }}></div>
+        <div style={{ display: 'flex', flexDirection: 'row', }}>
+          <NumberBox number={21} outOf={213} comment="House Democrats" />
+          <div style={{ width: "40px" }}></div>
+          <NumberBox number={1} outOf={47} comment="Senate Democrats" />
+          <div style={{ width: "40px" }}></div>
+          <NumberBox number={1} outOf={1} comment="George Clooney" />
+        </div>
+      </div>
+      <div >
+        <div className={styles.card}>
+          <a href="https://votesaveamerica.com/">
+            Sign up for Vote Save America
+          </a>
+        </div>
+        <div className={styles.card}>
+          <a href="https://www.washingtonpost.com/politics/2024/07/12/election-2024-biden-press-conference-reaction/#author-box">
+            WaPo 2024 Election Live Feed
+          </a>
+        </div>
+        <div className={styles.card}>
+          <a href="https://www.cnn.com/politics/live-news/election-2024-campaign-news-07-12-24/index.html">
+            CNN 2024 Election Live Feed
           </a>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <a> Fuck Donald Trump</a>
     </main>
   );
 }
