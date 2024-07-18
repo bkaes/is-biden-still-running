@@ -30,10 +30,10 @@ const NumberBoxContainer: React.FC = () => {
       image: "/nancy.png",
       expandoData: {
         people: {
-          public: ["Senator A", "Senator B"],
+          public: ["Adam Schiff (CA)", "Brittany Pettersen (CO)", "Jim Himes (CT)", "Mike Levin (CA)", "Scott Peters (CA)", "Eric Sorensen (IL)",  "Greg Stanton (AZ)", "Adam Smith (WA)", "Ed Case (HI)", "Brad Schneider (IL)", "Hillary Scholten (MI)", "Earl Blumenauer (OR)", "Pat Ryan (NY)", "Mikie Sherrill (NJ)",  "Angie Craig (MN)", "Mike Quigley (IL)", "Seth Moulton (MA)", "Raúl Grijalva (AZ)", "Lloyd Doggett (TX)" ],
           private: ["Minority Leader Hakeem Jeffries (NY)", "Nancy Pelosi (CA)"],
           halfhearted: ["Jim Clyburn (SC)"],
-          support: ["AOC (NYC)"],
+          support: ["AOC (NY)"],
         }
       }
     },
@@ -65,7 +65,6 @@ const NumberBoxContainer: React.FC = () => {
       }
     }, {
       id: '4',
-
       number: 1,
       outOf: 1,
       comment: "George Clooney",
@@ -74,12 +73,12 @@ const NumberBoxContainer: React.FC = () => {
       {
         people: {
 
-          public: ["George Clooney"],
+          public: ["George Clooney", "Rob Reiner", "Stephen King", "Abigail Disney", "David Axelrod"],
+          
         }
       }
     }, {
       id: '5',
-
       number: 1,
       outOf: 1,
       comment: "Covid Test",
