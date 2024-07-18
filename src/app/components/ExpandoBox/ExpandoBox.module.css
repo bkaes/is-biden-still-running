@@ -1,0 +1,57 @@
+/* ExpandoBox.module.css */
+.expandoBox {
+  position: relative;  /* Add this line */
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  display: flex;
+}
+
+.expandoHeader {
+  position: absolute;  /* Add this line */
+  top: 0;  /* Add this line */
+  left: 0;  /* Add this line */
+  right: 0;  /* Add this line */
+  background-color: #3b82f6;
+  color: white;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.expandoBody {
+  padding: 1rem;
+  padding-top: 4rem;  /* Add space at the top for the close button */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.expandoSection {
+  background-color: white;
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.expandoSection h4 {
+  margin-top: 0;
+  color: #3b82f6;
+}
+
+.expandoSection ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.expandoSection li {
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .expandoBox {
+    grid-template-columns: 1fr;
+  }
+}
